@@ -1,0 +1,8 @@
+{
+  "collections": {
+    "wateren_potentie_gt1ha": {
+      "jsonImport": "./output/wateren_potentie_gt1ha.json",
+      "unique": ["id"]
+    }
+  }
+}

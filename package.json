@@ -1,0 +1,27 @@
+{
+  "name": "geojson-server",
+  "version": "0.1.0",
+  "description": "A REST-based GeoJSON server",
+  "main": "./dist/index.js",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "clean:db": "rimraf ./db && mkdir db",
+    "start": "tsc -w",
+    "build": "tsc -b",
+    "bundle": "node ./dist/index.js",
+    "serve": "mkdir db && node node_modules/rest-easy-loki/dist/cli.js --config ./config.json",
+    "serve:reload": "npm run clean:db && node node_modules/rest-easy-loki/dist/cli.js --config ./config.json"
+  },
+  "author": "erik.vullings@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "rest-easy-loki": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.28",
+    "rimraf": "^3.0.2",
+    "tsc-watch": "^4.2.9",
+    "typescript": "4.1.5"
+  }
+}
