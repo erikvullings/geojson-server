@@ -9,7 +9,7 @@
     "start": "tsc -w",
     "build": "tsc -b",
     "bundle": "node ./dist/index.js",
-    "serve": "mkdir db && node node_modules/rest-easy-loki/dist/cli.js --config ./config.json",
+    "serve": "node node_modules/rest-easy-loki/dist/cli.js --config ./config.json",
     "serve:reload": "npm run clean:db && node node_modules/rest-easy-loki/dist/cli.js --config ./config.json"
   },
   "author": "erik.vullings@gmail.com",
